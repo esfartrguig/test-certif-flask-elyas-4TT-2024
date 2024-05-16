@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'dist/output.css') }}">
+        <!-- Title in tab -->
+        <title>{% block title %} {% endblock %}</title>
+    </head>
+    <body class="bg-gray-100">
+        <div class="container mx-auto p-4">
+            {% block content %}
+            <!-- Contenu de la page -->
+            {% endblock %}
+        </div>
+    </body>
+</html>
